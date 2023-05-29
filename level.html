@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Level Editor</title>
-  <style>
-    .cell {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border: 1px solid #ccc;
-    }
-    .cell-0 { background: #fff; }
-    .cell-1 { background: #0f0; }
-    .cell-2 { background: #f00; }
-  </style>
-</head>
-<body>
-  <div>
-    <button id="addRow">Add Row</button>
-    <button id="addColumn">Add Column</button>
-    <button id="removeRow">Remove Row</button>
-    <button id="removeColumn">Remove Column</button>
-    <button id="export">Export</button>
-  </div>
-  <div id="grid"></div>
 
-  <script src="level_editor.js"></script>
+<head>
+    <title>Level Editor</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="level.css">
+</head>
+
+<body>
+    <div class="header">
+        <button class="button" disabled="disabled" id="addRow">Add Row</button>
+        <button class="button" disabled="disabled" id="addColumn">Add Column</button>
+        <button class="button" disabled="disabled" id="removeRow">Remove Row</button>
+        <button class="button" disabled="disabled" id="removeColumn">Remove Column</button>
+        <button class="button" id="export">Export</button>
+    </div>
+    <div class="editor">
+        <table id="levelGrid">
+            <!-- table content -->
+            <div id="grid"></div>
+        </table>
+    </div>
+
+    <script src="level_editor.js"></script>
 </body>
+
 </html>
