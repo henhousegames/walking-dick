@@ -4,7 +4,7 @@ import PreloadScene from './scenes/preloadScene'
 import LevelScene from './scenes/levelScene'
 import GameScene from './scenes/gameScene'
 import GameOverScene from "./scenes/gameOverScene";
-
+import VictoryScene from "./scenes/victoryScene";
 
 const config = {
   type: Phaser.AUTO,
@@ -33,7 +33,7 @@ const config = {
       debug: false,
     },
   },
-  scene: [PreloadScene, LevelScene, GameScene, GameOverScene],
+  scene: [PreloadScene, LevelScene, GameScene, GameOverScene, VictoryScene],
 };
 
 const game = new Phaser.Game(config);
